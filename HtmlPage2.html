@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            background-color: purple;
+            font-size: 40px;
+            color: black;
+            
+        }
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .column {
+            float: left;
+            width: 25%;
+            padding: 20px;
+        }
+
+        @media screen and (max-width:800px) {
+            body {
+                background-color: mediumpurple;
+                font-size: 30px;
+                color: white;
+            }
+
+            .row {
+                float:left;
+                
+            }
+        }
+
+        @media screen and (max-width:600px) {
+            body {
+                background-color: pink;
+                font-size: 20px;
+                color: white;
+            }
+            .row {
+                float: left;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Resize</h1>
+    <div class="row">
+        <div class="col"><h1>Column1</h1></div>
+        <div class="col"><h1>Column2</h1></div>
+        <div class="col"><h1>Column3</h1></div>
+    </div>
+</body>
+</html>
